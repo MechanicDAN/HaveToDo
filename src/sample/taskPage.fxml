@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="700.0" style="-fx-background-color: #2E3348;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.taskPageController">
+    <children>
+        <Button id="button" fx:id="saveButton" layoutX="557.0" layoutY="22.0" mnemonicParsing="false" onAction="#saveEvent" prefHeight="47.0" prefWidth="129.0" style="-fx-background-color: #F39C36;" text="Save" textFill="#fffbfb">
+            <font>
+                <Font name="Arial" size="29.0" />
+            </font>
+        </Button>
+      <Button id="button" fx:id="backButton" layoutX="14.0" layoutY="22.0" mnemonicParsing="false" onAction="#backEvent" prefHeight="47.0" prefWidth="129.0" style="-fx-background-color: #F39C36;" text="Back" textFill="#fffbfb">
+         <font>
+            <Font name="Arial" size="29.0" />
+         </font>
+      </Button>
+      <TextArea fx:id="taskTextArea" layoutY="92.0" prefHeight="308.0" prefWidth="700.0" />
+      <TextField fx:id="taskNameField" alignment="BASELINE_CENTER" layoutX="189.0" layoutY="22.0" prefHeight="53.0" prefWidth="309.0" style="-fx-text-fill: #fffefe; -fx-background-color: #2E3348;" text="Task">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </TextField>
+    </children>
+</AnchorPane>

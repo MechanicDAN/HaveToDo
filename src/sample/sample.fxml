@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="700.0" style="-fx-background-color: #2E3348;" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.sampleController">
+   <children>
+      <Label layoutX="323.0" layoutY="22.0" prefHeight="47.0" prefWidth="54.0" text="Tasks" textFill="#fffefe">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Button id="button" fx:id="openButton" layoutX="549.0" layoutY="22.0" mnemonicParsing="false" onAction="#openEvent" prefHeight="47.0" prefWidth="129.0" style="-fx-background-color: #F39C36;" text="Open" textFill="#fffbfb">
+         <font>
+            <Font name="Arial" size="29.0" />
+         </font>
+      </Button>
+      <ListView fx:id="haveToDoList" layoutY="123.0" prefHeight="277.0" prefWidth="312.0" />
+      <ListView fx:id="completedList" layoutX="388.0" layoutY="123.0" prefHeight="277.0" prefWidth="312.0" />
+      <Text fill="WHITE" layoutX="65.0" layoutY="114.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Have to do">
+         <font>
+            <Font size="34.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="444.0" layoutY="112.0" strokeType="OUTSIDE" strokeWidth="0.0" text="completed" wrappingWidth="210.23828125">
+         <font>
+            <Font size="34.0" />
+         </font>
+      </Text>
+      <Button id="button" fx:id="addNewButton" layoutX="19.0" layoutY="25.0" mnemonicParsing="false" onAction="#addNewEvent" prefHeight="47.0" prefWidth="129.0" style="-fx-background-color: #F39C36;" text="Add New Task" textFill="#fffbfb">
+         <font>
+            <Font name="Arial" size="16.0" />
+         </font>
+      </Button>
+      <Button id="button" fx:id="deleteButton" layoutX="155.0" layoutY="25.0" mnemonicParsing="false" onAction="#deleteEvent" prefHeight="47.0" prefWidth="129.0" style="-fx-background-color: #F39C36;" text="delete" textFill="#fffbfb">
+         <font>
+            <Font name="Arial" size="16.0" />
+         </font>
+      </Button>
+      <Button id="button" fx:id="doneButton" layoutX="314.0" layoutY="200.0" mnemonicParsing="false" onAction="#doneEvent" prefHeight="47.0" prefWidth="72.0" style="-fx-background-color: #F39C36;" text="-&gt;" textFill="#fffbfb">
+         <font>
+            <Font name="Arial" size="29.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
